@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6f1e7;
+  --color-paper-deep: #efe7d8;
+  --color-ink: #1c1917;
+  --color-ink-soft: #57534e;
+  --color-rubric: #b3341f;
+  --color-sand: #ddd2bd;
+  --color-night: #17140f;
+}
+
+html { background: var(--color-paper); }
+body { -webkit-font-smoothing: antialiased; }
+
+::selection { background: var(--color-rubric); color: #fff; }
+
+input[type="range"] { accent-color: var(--color-rubric); }
