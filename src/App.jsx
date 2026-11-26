@@ -115,7 +115,7 @@ export default function App() {
           onClick={() => setNight(!night)}
           className={`shrink-0 rounded-full border px-4 py-2 text-sm transition ${night ? 'border-sand/40 hover:bg-paper/10' : 'border-sand hover:bg-paper-deep'}`}
         >
-          {night ? '☀ نهاري' : '☾ ورق داكن'}
+          {night ? <><svg viewBox="0 0 24 24" className="ms-1 inline h-4 w-4 align-[-3px]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400" /></svg> نهاري</> : <><svg viewBox="0 0 24 24" className="ms-1 inline h-4 w-4 align-[-3px]" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden="true"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z" /></svg> ورق داكن</>}
         </button>
       </header>
 
@@ -216,7 +216,7 @@ export default function App() {
             <div className="absolute inset-y-0 z-10" style={{ left: `calc(${split}% - 1px)` }}>
               <div className="absolute inset-y-0 w-0.5 bg-rubric" />
               <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-11 w-11 rounded-full bg-rubric text-white flex items-center justify-center shadow-lg cursor-ew-resize">
-                <span className="text-lg leading-none">⇄</span>
+                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.500" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4" /></svg>
               </div>
             </div>
             {/* Corner labels */}
